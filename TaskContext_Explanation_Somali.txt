@@ -1,0 +1,51 @@
+Sharraxaadda File-ka TaskContext.jsx ee af Soomaali
+
+File-kan waxaa loo isticmaalaa in lagu maamulo task-yada app-kaaga. Waxay u shaqeysaa sidii xudunta ama "central hub" ee xogta task-yada.
+
+1. Waxa uu soo dhooraraa React tools
+- createContext iyo useContext waa qaybo ka mid ah React oo u oggolaanaya qaybaha app-ka inay la wadaagaan xogta iyada oo aan loo baahnayn in la soo mariyo props si toos ah.
+
+2. Waxa la abuuraa TaskContext
+- `const TaskContext = createContext();`
+- Tani waxay abuuraa meel ay qaybaha app-ka ku heli karaan xogta task-yada.
+
+3. Hook-ka `useTasks`
+- `export function useTasks()`
+- Hook-kan ayaa kuu oggolaanaya inaad ka hesho task-yada meel kasta oo app-ka ka mid ah.
+
+4. Waxa la sameeyay `createTask`
+- Tani waa function ka caawisa in task kasta loo sameeyo qaab isku mid ah.
+- Waxay ka kooban tahay xogta soo socota:
+  - id: aqoonsi u gaar ah task-ka
+  - title: cinwaanka task-ka
+  - description: sharaxaad dheeraad ah
+  - subject: maado/corso
+  - priority: mudnaanta
+  - dueDate: taariikhda dhamaadka
+  - time: wakhtiga
+  - done: haddii la dhammeeyey ama la aan dhammeeyey
+  - createdAt: taariikhda lagu sameeyay
+
+5. Provider-ka `TaskProvider`
+- Tani waa qayb weyn oo ku wareegsan app-ka oo u oggolaanaya qaybaha kale inay isticmaalaan task-yada.
+- Waxay isticmaashaa useLocalStorage si task-yada looga keydiyo browser-ka.
+- Sidaas awgeed, haddii bogga la dib u furto, task-yada wali way ku sii jiraan.
+
+6. `addTask`
+- Marka qofku sameeyo task cusub, function-kan ayaa shaqeeya.
+- Waxay qaadataa xogta task-ka, sameysaa object cusub, oo ku darata liiska task-yada.
+
+7. `toggleTask`
+- Tani waxay beddeshaa xaaladda task-ka.
+- Haddii task-ku ahaa mid la dhammeeyey, waxay u beddeshaa mid aan dhammeeynin, ama lidkeeda.
+
+8. `deleteTask`
+- Tani waxay tirtirtaa task-ka liiska ka dib.
+
+9. `value`
+- Ugu dambeyntii, waxa la soo bandhigaa dhammaan xogta iyo functions-ka si qaybaha kale ee app-ka u isticmaali karaan.
+
+Guud ahaan
+- File-kan waa xudunta xogta task-yada.
+- Waxay maamushaa habka loo abuurayo, loo beddelo, loo tirtirayo, iyo loo keydiyo task-yada.
+- Haddii aad rabto, waxaan kuu diyaarin karaa sharraxaad isku mid ah oo loogu qoro file kale oo aad si toos ah ugu daabici karto.
